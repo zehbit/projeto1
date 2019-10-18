@@ -1,0 +1,274 @@
+/* Estilos Gerais */
+#navgeral{
+    display: flex; /*nosso container será flex*/
+    flex-direction: column;/*direção do conteúdo*/
+    align-items: center;/*Alinhamento dos itens*/
+    background-color: rgb(109, 165, 177); /*cor de fundo*/
+    width: 100%;
+}
+
+#navgeral ul{
+    font-size: 18px;
+    display: flex;
+    padding: 20px;/*espaçamento interno*/
+    margin: 20px;/*espaçamento externo*/
+    width: 100%;/*largura em 70% da pagina*/
+    list-style: none;/*remove marcadores de lista*/
+    color: #f1f1f1; /*cor da fonte*/
+}
+
+#navgeral ul li{
+    display: flex;
+    flex-direction: column;/*direção do conteúdo*/
+    width: 100%;/*largura do elemento em 100%*/
+    height: 20px;/*altura do elemento*/
+    line-height: 20px;/*alinhamento horizontal*/
+    text-align: center;/*texto centralizado*/
+}
+
+#navgeral ul li a{
+    width: 100%;/*largura do elemento em 100%*/
+    height: 40px;/*altura do elemento*/
+    line-height: 20px;/*alinhamento horizontal*/
+    width: 100%;/*largura do elemento em 100%*/
+    text-decoration: none;/*remove underline do link*/
+    color: #f1f1f1;
+}
+
+#navgeral ul li a:hover{
+    line-height: 40px;/*alinhamento horizontal*/
+    height: 60px;/*algura do elemento*/
+    background-color: rgb(18, 101, 117); /*cor de fundo*/
+    color: #470f0f;
+    text-align: top;
+}
+
+
+/* ESTILOS GERAIS */
+
+ /*Estilos para o Corpo da Página - Define estilo da fonte*/
+ body{
+  font-family: Helvetica, Arial;
+}
+/*Estilos para parágrafos - Definição de fontes*/
+h1, h2, h3{
+  font-family: "Permanent Marker", Helvetica, Arial;
+}
+
+h2{
+  color:#011b01;
+}
+/*ESTILOS ESTRUTURAIS*/
+
+/*Definindo estilo para o cabeçalho*/
+header{
+  background-color: rgba(184, 215, 241, 0.925); /*Cor de fundo*/
+  display: flex; /*Define que o container será flexivel*/
+  flex-direction: column; /*Define o comportamento do container*/
+  align-items: center; /*Alinha os intens do container ao centro*/
+}
+header img{
+  display: flex; /*Define que o container será flexivel*/
+  flex-direction: column; /*Define o comportamento do container*/
+  align-items: center; /*Alinha os intens do container ao centro*/
+  padding: 10px; /*Espaçamento interno de 20px para todos os lados*/
+}
+main img{
+  display: flex; /*Define que o container será flexivel*/
+  flex-direction: column; /*Define o comportamento do container*/
+  align-items: center; /*Alinha os intens do container ao centro*/
+  padding: 20px; /*Espaçamento interno de 20px para todos os lados*/
+  max-width: 90%;
+}
+/*Definindo estilos para todos os parágrafos dentro do cabeçalho*/
+header p{ 
+  max-width: 1000px; /*Define largura máxima do parágrafo*/
+  text-align: justify; /*Justifica o texto*/
+}
+#creation{
+  background-color: rgb(182, 192, 235);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+#evolution{
+  background-color: rgb(192, 227, 228);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+#continua{
+  background-color: rgb(204, 227, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+#mundo{
+  background-color: rgb(197, 219, 236);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+#falador{
+  background-color: rgb(197, 221, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+form{
+  background-color: lightgray;
+  margin: 0 auto;
+  width: 100%;
+  padding: 4px;
+  border: 1px, solid;
+  align-content: center;
+}
+form div + div{
+  margin-top: 1em;
+}
+label{
+  display: inline;
+  width: 90px;
+  text-align: right;
+}
+input, textarea{
+  font-size: 12px;
+  min-width: 300px;
+  min-height: 12px;
+  max-width: 700px;
+  max-height: 28px;
+  width: 100%;
+  box-sizing: border-box;
+  border-style: groove;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  max-width: 700px;
+  padding: 2px;
+  border-color: lightblue;
+  border-width: 2px;;
+  background-color: lavenderblush;
+  text-decoration-color: ivory;
+}
+footer{
+  background-color: #d7e6d5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
+
+
+
+
+.gallery-container {
+  width: 90%;
+  position: relative;
+  margin: 0 5%;
+  background: #333;
+  padding: 2px;
+}
+  @media (width: 100%) {
+      .gallery-container {
+        width: 100%;
+        margin: auto;
+      }
+  }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left;: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.imgslide {
+  display: flex;
+  width: 100%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 768px) {
+  .numbertext {
+    top: 15px;
+  }
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

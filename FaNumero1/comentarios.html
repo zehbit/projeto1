@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Minha Vida</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    </head>
+    <body>
+        <header>
+            <nav id="navgeral">
+                <ul id="Topo">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="minhaVida.html">Minha Vida</a></li>
+                    <li><a href="lugares.html">Cantos do Mundo</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <header>
+                <h2>Comentarios e Reflexoes</h2>
+            </header>
+            <section id="falador">
+                <table background="hey.png" width="200" height="50" onsubmit="coment()">
+                    <td>
+                        <form id="fala_muito" method="post">
+                            <div>
+                                <label for="nome">Nome:</label>
+                                <input type="text" id="nome" name="usuario_nome" />
+                            </div>
+                            <div>
+                                <label for="email">E-mail:</label>
+                                <input type="email" id="email" name="usuario_email" />
+                            </div>
+                            <div>
+                                <label for="msg">Mensagem:</label>
+                                <textarea id="msg" name="usuario_msg"></textarea>
+                            </div>
+                            
+                            <div class="button">
+                                <button type="submit">Enviar sua mensagem</button>
+                            </div>
+                        </form>
+                    </td>
+                </table>
+                
+                <div id="coment">
+                    <form method="GET">
+                        <div>
+                            <output>coment()</output>
+                            <output form="usuario_nome"></output>
+                        </div>
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <output form="usuario_email"></output>
+                        </div>
+                        
+                </div>
+            </section>
+            
+            
+        </main>
+        <script>
+            
+            
+            document.getElementById('fala_muito')
+            
+            documents.getElementsByTagName('input')[0].value
+            
+        </script>
+        
+    </body>
+    <footer>
+        <h2>Contatos</h2>
+            <p>
+                <address><a href="https://www.google.com.br/maps/place/Palmas,+TO/@-10.2600522,-48.4172749,12z/data=!3m1!4b1!4m5!3m4!1s0x933b3439911f1257:0x93b8070d05c818f!8m2!3d-10.249091!4d-48.3242858"> Palmas - TO </a></address>
+                <address><a href="mailto:zehbit.com@gmail.com"> zehbit.com@gmail.com </a></address>
+                <address><a href="tel:+5563984625062">(63) 9 8462-5062</a></address>
+                <a href="#Topo"> Voltar ao Topo </a>
+            </p>
+    </footer>
+</html>
